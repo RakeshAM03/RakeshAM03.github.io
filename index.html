@@ -307,8 +307,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <div class="wrap">
     <a class="brand" href="#top"><img src="rakesh.jpg" alt="" width="34" height="34">Rakesh A M</a>
     <div class="links">
-      <a href="#library">Library</a>
       <a href="#about" class="opt">About</a>
+      <a href="#library">Library</a>
       <a href="#experience">Experience</a>
       <a href="#work" class="opt">Work</a>
       <a href="#hire">Why me</a>
@@ -366,6 +366,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     </div>
   </header>
 
+  <section class="block" id="about">
+    <div class="wrap two rv">
+      <div class="sec-head"><span class="label">About</span><h2>An independent QA owner</h2></div>
+      <div class="about">
+        <p>I'm a Quality Assurance Engineer with 6+ years of experience across HR-Tech, CRM SaaS, Healthcare and EdTech products. At Joveo I work as the independent QA owner for the TAO products (CMS and CRM), so the quality of what we ship is my responsibility.</p>
+        <p>I read requirements early and raise risks before they turn into bugs. When something breaks, I stay with it until it is fixed. I work closely with Product, Development and Implementation teams, and I use AI tools every day to plan, write and review my testing work.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="library" id="library">
     <div class="wrap">
       <div class="lib-head">
@@ -382,16 +392,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <div class="tip" id="tip"></div>
       </div>
       <div class="index" id="index" aria-label="Volumes"></div>
-    </div>
-  </section>
-
-  <section class="block" id="about">
-    <div class="wrap two rv">
-      <div class="sec-head"><span class="label">About</span><h2>An independent QA owner</h2></div>
-      <div class="about">
-        <p>I'm a Quality Assurance Engineer with 6+ years of experience across HR-Tech, CRM SaaS, Healthcare and EdTech products. At Joveo I work as the independent QA owner for the TAO products (CMS and CRM), so the quality of what we ship is my responsibility.</p>
-        <p>I read requirements early and raise risks before they turn into bugs. When something breaks, I stay with it until it is fixed. I work closely with Product, Development and Implementation teams, and I use AI tools every day to plan, write and review my testing work.</p>
-      </div>
     </div>
   </section>
 
@@ -456,32 +456,32 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <article class="card case rv">
           <h3>End-to-end hiring flow testing</h3>
           <dl>
-            <div><dt>Context</dt><dd>Joveo's CMS and CRM power the full hiring journey for recruiters and candidates.</dd></div>
-            <div><dt>What I did</dt><dd>Tested it as one flow: job creation and career site publishing, Easy/Fast Apply, candidate capture, interview scheduling with the Joveo Chrome Extension, and ATS sync up to the final hiring stage.</dd></div>
-            <div><dt>Outcome</dt><dd class="out">Gaps between modules are caught before release, not by clients.</dd></div>
+            <div><dt>Problem</dt><dd>Bugs hide between CMS and CRM modules.</dd></div>
+            <div><dt>What I did</dt><dd>Tested job post → apply → interview → ATS sync as one flow.</dd></div>
+            <div><dt>Outcome</dt><dd class="out">Gaps caught before release, not by clients.</dd></div>
           </dl>
         </article>
         <article class="card case rv">
           <h3>QA Hub</h3>
           <dl>
-            <div><dt>Context</dt><dd>Pull request validation was manual and spread across tools.</dd></div>
-            <div><dt>What I did</dt><dd>Designed a central QA Hub for PR validation testing, code quality checks, AI-based test prompt generation and defect tracking.</dd></div>
-            <div><dt>Outcome</dt><dd class="out">Less manual regression effort and faster releases for the team.</dd></div>
+            <div><dt>Problem</dt><dd>Manual PR checks spread across tools.</dd></div>
+            <div><dt>What I did</dt><dd>Built one hub for PR tests, code checks, AI prompts and defects.</dd></div>
+            <div><dt>Outcome</dt><dd class="out">Less manual effort, faster releases.</dd></div>
           </dl>
         </article>
         <article class="card case rv">
           <h3>AI feature QA</h3>
           <dl>
-            <div><dt>Context</dt><dd>The product added Agentic AI features, AI-generated content and prompt-driven workflows.</dd></div>
-            <div><dt>What I did</dt><dd>Tested them in a structured way, and use Claude Code, GitHub Copilot and Cursor daily to understand requirements, generate and review test cases and plans, do code review and write documentation.</dd></div>
-            <div><dt>Outcome</dt><dd class="out">AI features get the same test discipline as the rest of the product, and my QA workflow is faster and more consistent.</dd></div>
+            <div><dt>Problem</dt><dd>New Agentic AI features had no test approach.</dd></div>
+            <div><dt>What I did</dt><dd>Structured AI testing, plus Claude Code, Copilot and Cursor daily.</dd></div>
+            <div><dt>Outcome</dt><dd class="out">AI features tested like the rest; faster QA.</dd></div>
           </dl>
         </article>
         <article class="card case rv">
           <h3>Go-live support</h3>
           <dl>
-            <div><dt>Context</dt><dd>Client go-lives need fast answers when something goes wrong.</dd></div>
-            <div><dt>What I did</dt><dd>Act as the first point of contact for quality issues: reproduce and triage, find the root cause with developers, and follow up until the fix is delivered.</dd></div>
+            <div><dt>Problem</dt><dd>Go-live issues need fast answers.</dd></div>
+            <div><dt>What I did</dt><dd>First contact: triage, root cause, follow through to fix.</dd></div>
             <div><dt>Outcome</dt><dd class="out">Launches stay on schedule.</dd></div>
           </dl>
         </article>
@@ -536,32 +536,32 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <div class="reasons">
           <article class="reason card rv">
             <h3>I take full ownership of quality</h3>
-            <p class="line"><span class="tag bad">Problem</span><span>Bugs are found late, and nobody clearly owns the quality of a release.</span></p>
-            <p class="line"><span class="tag good">My solution</span><span>I check the requirements before coding starts, write the test plan, test the full flow, and tell the team clearly if the release is safe to go live.</span></p>
+            <p class="line"><span class="tag bad">Problem</span><span>Bugs found late, no clear quality owner.</span></p>
+            <p class="line"><span class="tag good">Solution</span><span>Early requirement review, full-flow testing, clear go/no-go.</span></p>
             <div class="chips mini"><span class="chip">Requirement review (PRD/BRD)</span><span class="chip">Test planning</span><span class="chip">End-to-end testing</span><span class="chip">Release readiness</span><span class="chip">Jira</span></div>
           </article>
           <article class="reason card rv">
             <h3>I save time with automation</h3>
-            <p class="line"><span class="tag bad">Problem</span><span>Testing the same things by hand in every release takes too long.</span></p>
-            <p class="line"><span class="tag good">My solution</span><span>I automate the repeated tests with Selenium and Java, and run them automatically in Jenkins or GitHub Actions after every build.</span></p>
+            <p class="line"><span class="tag bad">Problem</span><span>Slow, repetitive manual regression.</span></p>
+            <p class="line"><span class="tag good">Solution</span><span>Selenium + Java suites running in CI on every build.</span></p>
             <div class="chips mini"><span class="chip">Selenium WebDriver</span><span class="chip">Java</span><span class="chip">TestNG</span><span class="chip">Cucumber (BDD)</span><span class="chip">Jenkins</span><span class="chip">GitHub Actions</span></div>
           </article>
           <article class="reason card rv">
             <h3>I find API and integration bugs early</h3>
-            <p class="line"><span class="tag bad">Problem</span><span>Connections with other systems break, and customers are the first to notice.</span></p>
-            <p class="line"><span class="tag good">My solution</span><span>I test the APIs with Postman and REST Assured, and check the data in the database, before customers use the feature.</span></p>
+            <p class="line"><span class="tag bad">Problem</span><span>Integrations break; customers notice first.</span></p>
+            <p class="line"><span class="tag good">Solution</span><span>API + DB checks with Postman and REST Assured before go-live.</span></p>
             <div class="chips mini"><span class="chip">REST API testing</span><span class="chip">Postman</span><span class="chip">REST Assured</span><span class="chip">SQL</span></div>
           </article>
           <article class="reason card rv">
             <h3>I can test AI features</h3>
-            <p class="line"><span class="tag bad">Problem</span><span>AI features can give wrong or made-up answers, and they are hard to test.</span></p>
-            <p class="line"><span class="tag good">My solution</span><span>I check AI answers for correctness, made-up information (hallucination) and speed. I also use AI tools every day to write test cases faster.</span></p>
+            <p class="line"><span class="tag bad">Problem</span><span>AI gives wrong or made-up answers.</span></p>
+            <p class="line"><span class="tag good">Solution</span><span>Test AI output for accuracy, hallucination and latency.</span></p>
             <div class="chips mini"><span class="chip">Agentic AI testing</span><span class="chip">LLM evaluation</span><span class="chip">Claude Code</span><span class="chip">GitHub Copilot</span><span class="chip">Cursor</span></div>
           </article>
           <article class="reason card rv">
             <h3>I can start right away</h3>
-            <p class="line"><span class="tag bad">Problem</span><span>The team needs help now, not after a two or three month notice period.</span></p>
-            <p class="line"><span class="tag good">My solution</span><span>I am an immediate joiner with 6+ years of QA experience, so I can start contributing from the first week.</span></p>
+            <p class="line"><span class="tag bad">Problem</span><span>Team needs help now, not in 3 months.</span></p>
+            <p class="line"><span class="tag good">Solution</span><span>Immediate joiner, contributing from week one.</span></p>
             <div class="chips mini"><span class="chip">Immediate joiner</span><span class="chip">6+ years in QA</span><span class="chip">HR-Tech</span><span class="chip">CRM SaaS</span><span class="chip">Healthcare</span><span class="chip">EdTech</span></div>
           </article>
         </div>
