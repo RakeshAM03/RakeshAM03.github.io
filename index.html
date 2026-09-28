@@ -7,10 +7,9 @@
 <meta name="description" content="Rakesh A M, Quality Assurance Engineer in Bangalore with 6+ years in manual, automation (Selenium Java) and AI/GenAI testing. Immediate joiner.">
 <meta property="og:title" content="Rakesh A M · Quality Assurance Engineer">
 <meta property="og:description" content="6+ years in QA · 4+ years in test automation · AI/GenAI testing · Immediate joiner">
-<meta property="og:image" content="rakesh.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0A0E17">
-<link rel="icon" href="rakesh.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3864'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='24' font-weight='800' fill='%23E7B061' text-anchor='middle'%3ERAM%3C/text%3E%3C/svg%3E">
 <style>html{color-scheme:dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +49,7 @@ p{margin:0}
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(10,14,23,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:62px}
 .brand{white-space:nowrap;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800}
-.brand img{width:34px;height:34px;border-radius:10px;object-fit:cover;border:1px solid var(--line-2)}
+.brand .mk{width:34px;height:34px;border-radius:10px;border:1px solid var(--line-2);display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--surface-2));font:800 .68rem var(--mono);color:var(--lamp);letter-spacing:.02em}
 .links{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
 .links::-webkit-scrollbar{display:none}
 .links a{color:var(--ink-2);text-decoration:none;font-size:.9rem;padding:7px 11px;border-radius:9px;white-space:nowrap;transition:background .2s,color .2s}
@@ -61,19 +60,17 @@ p{margin:0}
 .hero{padding-block:52px 28px}
 .hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:44px;align-items:center}
 @media (max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
-.who{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.photo-wrap{position:relative;flex:none;width:118px;height:118px;border-radius:26px;padding:3px;
-  background:conic-gradient(from var(--ang,0deg),var(--blue),var(--lamp),var(--blue-deep),var(--blue));animation:spin 8s linear infinite}
 @property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
 @keyframes spin{to{--ang:360deg}}
-.photo-wrap img{width:100%;height:100%;border-radius:23px;object-fit:cover;display:block;background:var(--surface)}
-@media (max-width:520px){.photo-wrap{width:96px;height:96px;border-radius:22px}.photo-wrap img{border-radius:19px}}
-.hero h1{font-size:clamp(2.7rem,6.4vw,4.4rem);font-weight:800;line-height:1.02;margin-top:8px;
+.hero h1{font-size:clamp(2.6rem,6vw,4.2rem);font-weight:800;line-height:1.08;margin-top:10px;padding-bottom:.04em;overflow-wrap:anywhere;
   background:linear-gradient(100deg,var(--ink) 30%,#9CC3EE 50%,var(--ink) 70%);background-size:250% 100%;
   -webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 6s ease-in-out infinite}
 @keyframes sheen{0%,100%{background-position:100% 0}50%{background-position:0 0}}
-.role{font-weight:700;font-size:clamp(1.02rem,2.2vw,1.25rem);margin-top:12px;color:var(--ink)}
+.role{font-weight:700;font-size:1.05rem;margin-top:12px;color:var(--ink);white-space:nowrap}
+@media (min-width:901px) and (max-width:1140px){.role{font-size:1.42vw}}
+@media (max-width:900px){.role{font-size:min(1.05rem,2.7vw)}}
 .role span{color:var(--muted);font-weight:500}
+.role .rt{font-weight:800;color:var(--blue)}
 .pitch{margin-top:16px;font-size:1.1rem;color:var(--ink-2);max-width:58ch}
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
 .badge{font-family:var(--mono);font-size:.78rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2)}
@@ -305,7 +302,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div id="ball" aria-hidden="true"></div><div id="dot" aria-hidden="true"></div>
 <nav class="nav" aria-label="Main">
   <div class="wrap">
-    <a class="brand" href="#top"><img src="rakesh.jpg" alt="" width="34" height="34">Rakesh A M</a>
+    <a class="brand" href="#top"><span class="mk" aria-hidden="true">RAM</span>Rakesh A M</a>
     <div class="links">
       <a href="#about" class="opt">About</a>
       <a href="#library">Library</a>
@@ -322,14 +319,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <header class="hero">
     <div class="wrap">
       <div>
-        <div class="who">
-          <div class="photo-wrap"><img src="rakesh.jpg" alt="Photo of Rakesh A M" width="118" height="118"></div>
-          <div>
-            <div class="label">Quality Assurance Engineer · Bangalore, India</div>
-            <h1>Rakesh A M</h1>
-          </div>
-        </div>
-        <div class="role">Quality Assurance Engineer <span>| Manual · Automation · AI Testing</span></div>
+        <div class="label">Quality Assurance Engineer · Bangalore, India</div>
+        <h1>Rakesh A M</h1>
+        <div class="role"><b class="rt">Quality Assurance Engineer</b> <span>| Manual · Automation · AI Testing</span></div>
         <p class="pitch">I help product teams ship stable releases. I own quality end to end, from reading the requirement to signing off the release, and I use automation and AI tools to make testing faster and more reliable.</p>
         <div class="badges">
           <span class="badge"><b>6+ years</b> in QA</span>
